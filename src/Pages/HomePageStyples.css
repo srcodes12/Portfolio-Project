@@ -1,0 +1,35 @@
+#pl1 {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.animation {
+  display:block;
+  position: relative;
+  z-index:10;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 80%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+hr {
+  opacity: .25;
+  border-top: 1px solid;
+  margin: 1rem 0;
+}
+
+
+.card-group {
+  margin-left: 20vw;
+  margin-right: 6vw;
+}

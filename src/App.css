@@ -1,0 +1,27 @@
+
+@font-face {
+  font-family: 'q';
+  src: url('./assets/fonts/q.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'one';
+  src: url('./assets/fonts/one.ttf') format('ttf');
+}
+body {
+  background: linear-gradient(-45deg, #2c3e50, #34495e, #7f8c8d, #95a5a6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

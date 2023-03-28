@@ -1,0 +1,8 @@
+.boxstyle {
+  
+}
+
+.boxstyle:hover {
+  box-shadow: 0 0px 12px rgba(223, 223, 223, 0.985);
+  transition: box-shadow 0.3s ease-in-out;
+}

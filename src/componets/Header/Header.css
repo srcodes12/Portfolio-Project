@@ -1,0 +1,89 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #b6b6b6 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #e1e1e1 !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0.25rem;
+}
+
+.active {
+  color: #ffffff !important;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 14vw;
+  position: fixed ;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #171717;
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-right: 0%;
+  display: grid;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 17px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: font1;
+  color: #d6d6d6;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidenav a:hover {
+  color: #ffe99a;
+}
+
+.main {
+  margin-left: 200px; 
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../../assets/fonts/q.ttf);
+};
+
+
+#headShot {
+  justify-content: center;
+  align-items:center
+};
