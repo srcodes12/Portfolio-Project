@@ -6,7 +6,9 @@ import { Container,
         Button,
         CardTitle,
         CardGroup,
-        CardText,} from 'reactstrap';
+        CardText,
+        ListGroupItem,
+        ListGroup} from 'reactstrap';
 import SubHeader from '../componets/Header/SubHeader';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import img from '../assets/images/xuxwater.png';
@@ -21,59 +23,35 @@ const HomePage = () => {
 
     </Container>
     <CardGroup className='mt-5'>
-    <Card className='m-2'>
-      <CardImg
-        alt="Card image cap"
-        src="https://picsum.photos/318/180"
-        top
-        width="100%"
-        
-      />
-      <CardBody>
-        <CardTitle tag="h2">
-          Card title
-        </CardTitle>
-        <CardSubtitle
-          className="mb-2 text-muted"
-          tag="h3"
-        >
-          Card subtitle
-        </CardSubtitle>
-        <CardText tag='h4'>
-          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    <Card className="m-2 rounded-5 boxstyle">
+    <CardBody>
+      <CardTitle tag="h2" className='justify-content-center d-flex'>Lets get in touch!</CardTitle>
+      <hr></hr>
+        <CardText>
+          
         </CardText>
-        <Button>
-          Button
-        </Button>
-      </CardBody>
-    </Card>
+      <ListGroup tag="h4">
+      <ListGroupItem>Mobile Number: (505)785-1719</ListGroupItem>
+      <ListGroupItem>Email: stephenrogerszk@gmail.com</ListGroupItem>
+      <ListGroupItem></ListGroupItem>
+    </ListGroup>
+    </CardBody>
+  </Card>
     
-    <Card className='m-2'>
-      <CardImg
-        alt="Card image cap"
-        src="https://picsum.photos/318/180"
-        top
-        width="100%"
-        
-      />
-      <CardBody>
-        <CardTitle tag="h2">
-          Card title
-        </CardTitle>
-        <CardSubtitle
-          className="mb-2 text-muted"
-          tag="h3"
-        >
-          Card subtitle
-        </CardSubtitle>
-        <CardText tag='h4'>
-          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    <Card className="m-2 rounded-5 boxstyle">
+    <CardBody>
+      <CardTitle tag="h2" className='justify-content-center d-flex'>Lets get in touch!</CardTitle>
+      <hr></hr>
+        <CardText>
+          
         </CardText>
-        <Button>
-          Button
-        </Button>
-      </CardBody>
-    </Card>
+      <ListGroup tag="h4">
+      <ListGroupItem>Mobile Number: (505)785-1719</ListGroupItem>
+      <ListGroupItem>Email: stephenrogerszk@gmail.com</ListGroupItem>
+      <ListGroupItem></ListGroupItem>
+    </ListGroup>
+    </CardBody>
+  </Card>
   </CardGroup>
   </>
     );

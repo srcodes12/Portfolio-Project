@@ -13,7 +13,8 @@ import {
   CardGroup,
   CardText,
   ListGroup,
-  ListGroupItem
+  ListGroupItem,
+  Textarea,
 } from 'reactstrap'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import ws1 from '../assets/images/website1.png'
@@ -28,6 +29,9 @@ const ContactPage = () => {
     <CardBody>
       <CardTitle tag="h2" className='justify-content-center d-flex'>Lets get in touch!</CardTitle>
       <hr></hr>
+        <CardText>
+          
+        </CardText>
       <ListGroup tag="h4">
       <ListGroupItem>Mobile Number: (505)785-1719</ListGroupItem>
       <ListGroupItem>Email: stephenrogerszk@gmail.com</ListGroupItem>
@@ -37,7 +41,6 @@ const ContactPage = () => {
   </Card>
   </CardGroup>
   </Container>
-
 );
 };
 
