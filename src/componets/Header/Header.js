@@ -25,9 +25,19 @@ import {
 
 
 const Header = () => {
+  const [isCollapsed, setIsCollapsed] = useState(true)
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed)
+  }
+
     return (
     <>
-    <Container xs='6' sm='3' className='text-center ' >
+    
+    <Container xs='6' sm='3' className='' >
+    
+    <button className='h4 rounded-3' style={{ alignItems: 'start'}} onClick={toggleCollapse}>{isCollapsed ? 'Open Tab' : 'Close Tab'}</button>
+    {isCollapsed ? (<div></div> ) : (
     <div class="sidenav">
         <img src={sr} width='90%'className='mt-5' alt='Stephen Rogers'/>
         <img src={fs} width='70%' className='rounded-circle' id='headShot' alt='HeadShot'/>
@@ -51,6 +61,7 @@ const Header = () => {
               </a>
             </div>
         </div>
+        )}
       </Container>
     </>
   );
