@@ -21,6 +21,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
@@ -71,14 +72,14 @@ const Header = () => {
             </div>
 
             <div className="d-flex justify-content-start ">
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/" target='blank'>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="https://twitter.com/">
+              <a href="https://twitter.com/" target='blank'>
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="https://www.instagram.com/">
-                <FontAwesomeIcon icon={faInstagram} />
+              <a href="https://www.instagram.com/" target='blank'>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
           </div>

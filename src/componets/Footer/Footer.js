@@ -6,6 +6,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 const Footer = () => {
@@ -38,22 +39,23 @@ const Footer = () => {
           <Col xs='6' sm='3' className='text-center'>
             <h2 className="d-flex justify-content-around">Socials</h2>
             <div className="d-flex justify-content-around">
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/" target='blank'>
                 <FontAwesomeIcon icon={faLinkedin} size="4x" />
               </a>
-              <a href="https://twitter.com/">
+              <a href="https://twitter.com/" target='blank'>
                 <FontAwesomeIcon icon={faTwitter} size="4x" />
               </a>
-              <a href="https://www.instagram.com/">
-                <FontAwesomeIcon icon={faInstagram} size="4x" />
+              <a href="https://github.com/srcodes12" target='blank'>
+                <FontAwesomeIcon icon={faGithub} size="4x" />
               </a>
             </div>
           </Col>
           <Col sm='4' className='text-center' >
             <h2 className="d-flex justify-content-around">Contact</h2>
-            <ul className="list-unstyled d-flex justify-content-around" >
+            <ul className="list-unstyled" >
               <li><h4>Albqu, New Mexico</h4></li>
               <li><h4>(505) 785-1719</h4></li>
+              <li><h4>stephenrogerszk@gmail.com</h4></li>
             </ul>
           </Col>
         </Row>
