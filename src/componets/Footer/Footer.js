@@ -2,69 +2,77 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faFacebook,
   faTwitter,
-  faInstagram,
   faLinkedin,
   faGithub,
-} from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
+} from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
+import './Footer.css'
+
 const Footer = () => {
   return (
-    <footer className="bg-light site-footer mt-5" >
+    <footer className="bg-light site-footer mt-5">
       <Container className="">
-        <hr>
-        </hr>
-        <Row >
-          <Col xs={{ size: 4, offset: 3 }} sm='2' >
-          <h2>Links</h2>
-                        <h4><ul className='list-unstyled '>
-                            <li>
-                                <Link to='/'>Home</Link>
-                            </li>
-                            <li>
-                                <Link to='/directory'>Portfolio</Link>
-                            </li>
-                            <li>
-                                <Link to='/about'>Services</Link>
-                            </li>
-                            <li>
-                                <Link to='/contact'>About</Link>
-                            </li>
-                            <li>
-                                <Link to='/contact'>Contact</Link>
-                            </li>
-                        </ul></h4>
+        <hr></hr>
+        <Row>
+          <Col xs={{ size: 4, offset: 3 }} sm="2">
+            <h2>Links</h2>
+            <h4>
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/directory">Portfolio</Link>
+                </li>
+                <li>
+                  <Link to="/about">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contact">About</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </h4>
           </Col>
-          <Col xs='6' sm='3' className='text-center'>
+          <Col xs="6" sm="3" className="text-center">
             <h2 className="d-flex justify-content-around">Socials</h2>
             <div className="d-flex justify-content-around">
-              <a href="https://www.facebook.com/" target='blank'>
+              <a href="https://www.facebook.com/" target="blank">
                 <FontAwesomeIcon icon={faLinkedin} size="4x" />
               </a>
-              <a href="https://twitter.com/" target='blank'>
+              <a href="https://twitter.com/" target="blank">
                 <FontAwesomeIcon icon={faTwitter} size="4x" />
               </a>
-              <a href="https://github.com/srcodes12" target='blank'>
+              <a href="https://github.com/srcodes12" target="blank">
                 <FontAwesomeIcon icon={faGithub} size="4x" />
               </a>
             </div>
           </Col>
-          <Col sm='4' className='text-center' >
+          <Col sm="4" className="text-center">
             <h2 className="d-flex justify-content-around">Contact</h2>
-            <ul className="list-unstyled" >
-              <li><h4>Albqu, New Mexico</h4></li>
-              <li><h4>(505) 785-1719</h4></li>
-              <li><h4>stephenrogerszk@gmail.com</h4></li>
+            <ul className="list-unstyled">
+              <li>
+                <h4>Albqu, New Mexico</h4>
+              </li>
+              <li>
+                <h4>(505) 785-1719</h4>
+              </li>
+              <li>
+                <h4>stephenrogerszk@gmail.com</h4>
+              </li>
             </ul>
           </Col>
         </Row>
       </Container>
-      <hr>
-    </hr>
+      <hr></hr>
     </footer>
-    
   )
 }
 
-export default Footer;
+
+
+
+export default Footer
