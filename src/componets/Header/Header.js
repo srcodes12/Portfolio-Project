@@ -31,9 +31,20 @@ const Header = () => {
     setIsCollapsed(!isCollapsed)
   }
 
+
+
+  const styles = {
+    collapsingContent: {
+      transition: 'height 1s ease-in-out',
+      overflow: 'hidden',
+      width: isCollapsed ? ('250px' : 'auto') : ('300px' ),
+    },
+  };
+
+
   return (
     <>
-      <Container xs="6" sm="3" className="">
+      
         <button
           className="h4 rounded-3"
           style={{ alignItems: 'start' }}
@@ -44,7 +55,8 @@ const Header = () => {
         {isCollapsed ? (
           <div></div>
         ) : (
-          <div class="sidenav">
+          
+          <div class="sidenav" style={styles.collapsingContent}>
             <img src={sr} width="90%" className="mt-5" alt="Stephen Rogers" />
             <img
               src={fs}
@@ -84,7 +96,7 @@ const Header = () => {
             </div>
           </div>
         )}
-      </Container>
+  
     </>
   )
 }

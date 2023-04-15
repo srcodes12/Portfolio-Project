@@ -31,7 +31,7 @@ const PortfolioPage = () => {
               after effects, and cinema 4d. This website is also designed and
               build by me, in the use case of a link tree!
             </CardText>
-            <Button target="blank" href="https://xux.eth.limo/">
+            <Button target="blank" className='rounded-2' href="https://xux.eth.limo/">
               <h3>Launch</h3>
             </Button>
           </CardBody>

@@ -41,16 +41,17 @@
 .sidenav {
   height: 100%;
   width: 14vw;
-  position: fixed ;
-  z-index: 0;
+  position: flex-start;
   top: 0;
   left: 0;
   background-color: #171717;
   overflow-x: hidden;
   padding-top: 50px;
-  padding-right: 1%;
+  padding-right: 0%;
   display: grid;
+  
 }
+
 
 .sidenav a {
   padding: 6px 6px 6px 17px;
