@@ -55,10 +55,10 @@ const Footer = () => {
             <h2 className="d-flex justify-content-around">Contact</h2>
             <ul className="list-unstyled">
               <li>
-                <h4>Albqu, New Mexico</h4>
+                <h4>Albuquerque, New Mexico</h4>
               </li>
               <li>
-                <h4>(505) 785-1719</h4>
+                <h4>(505)-785-1719</h4>
               </li>
               <li>
                 <h4>stephenrogerszk@gmail.com</h4>

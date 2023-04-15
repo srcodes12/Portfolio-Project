@@ -25,7 +25,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
-  const [isCollapsed, setIsCollapsed] = useState(true)
+  const [isCollapsed, setIsCollapsed] = useState(false)
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed)
