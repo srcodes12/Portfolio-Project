@@ -51,6 +51,7 @@ const HomePage = () => {
           ) : (
             <CardText className='h3' style={{ width: '90%', alignItems: 'center' }}>{`Hello and welcome to my website! My name is Stephen and I'm a 23 year old software developer who is passionate about building with current technology to solve real world problems. I have a deep understanding of software development principles, best practices, and modern technologies, and I strive to create meaningful and impactful software solutions that not only meet the needs of clients and end users. Thank you for stopping by and please don't hesitate to reach out to me with any questions or inquiries.`}</CardText>
           )}
+          <hr></hr>
           <Button
                 className='h4 rounded-3'
                 onClick={toggleCollapse}
