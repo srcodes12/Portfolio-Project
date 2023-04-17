@@ -66,7 +66,7 @@ const HomePage = () => {
               
               <hr></hr>
               <Button
-                    className={`h4 rounded-3 boxstyle ${isCollapsed ? 'collapsed' : 'expanded'}`}
+                    className={`h4 rounded-3 ${isCollapsed ? 'collapsed' : 'expanded'}`}
                     onClick={toggleCollapse}
                     style={{ fontSize: '1.5rem' }}
                   >

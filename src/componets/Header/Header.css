@@ -40,8 +40,8 @@
 
 .sidenav {
   height: 100%;
-  width: 14vw;
-  position: flex-start;
+  width: 15% !important;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #171717;
@@ -49,7 +49,6 @@
   padding-top: 50px;
   padding-right: 0%;
   display: grid;
-  
 }
 
 
