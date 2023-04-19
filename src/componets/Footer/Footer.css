@@ -1,7 +1,13 @@
-link {
-  text-decoration: none;
-}
 
 .faGithublogo:hover {
   color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul li a {
+  color: inherit;
+  text-decoration: none;
 }

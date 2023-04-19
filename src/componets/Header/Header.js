@@ -27,29 +27,10 @@ import {
 
 
 const Header = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
-  const styles = {
-    collapsingContent: {
-      transition: 'height 1s ease-in-out',
-      overflow: 'hidden',
-      width: isCollapsed ? ('250px' : 'auto') : ('300px'),
-    },
-  };
 
   return (
-    <div className="sidenav" style={styles.collapsingContent}>
-      <button
-        className={`h4 rounded-3 ${isCollapsed ? 'collapsed' : 'expanded'}`}
-        style={{ alignItems: 'start' }}
-        onClick={toggleCollapse}
-      >
-        {isCollapsed ? 'Open Tab' : 'Close Tab'}
-      </button>
+    <div className="sidenav">
+      
 
       <img src={sr} width="90%" className="mt-5" alt="Stephen Rogers" />
       <img

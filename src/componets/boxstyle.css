@@ -4,3 +4,7 @@
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.985);
   transition: box-shadow 0.3s ease-in-out;
 }
+
+div { 
+  font-family: font1;
+}

@@ -18,10 +18,6 @@
   position: absolute;
 }
 
-.animation_layer.parallax {
-  position: fixed;
-}
-
 hr {
   opacity: .25;
   border-top: 1px solid;
@@ -33,4 +29,9 @@ hr {
   margin-left: 20vw;
   margin-right: 6vw;
 }
+
+@font-face {
+  font-family: font1;
+  src: url(../assets/fonts/q.ttf);
+};
 
