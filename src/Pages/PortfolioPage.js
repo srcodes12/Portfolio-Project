@@ -24,15 +24,15 @@ const PortfolioPage = () => {
         <Card className="m-2 rounded-5 boxstyle">
           <CardImg alt="Graphics Portfolio" src={ws1} top width="100%" className='rounded-5'/>
           <CardBody>
-            <CardTitle tag="h2">Graphics Portfolio - Website</CardTitle>
+            <CardTitle tag="h2">IPFS Graphics Portfolio</CardTitle>
             <hr></hr>
             <CardText tag="h4">
               This is my graphic portfolio, using adobe photoshop, illistrator,
               after effects, and cinema 4d. This website is also designed and
               build by me, in the use case of a link tree!
             </CardText>
-            <Button target="blank" className='rounded-2' href="https://xux.eth.limo/">
-              <h3>Launch</h3>
+            <Button target="blank" style={{fontSize: 18, padding: 6 }} className='rounded-4' href="https://xux.eth.limo/">
+              Launch
             </Button>
           </CardBody>
         </Card>

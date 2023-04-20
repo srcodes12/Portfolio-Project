@@ -59,13 +59,13 @@ const Header = () => {
       </div>
 
       <div className="d-flex justify-content-start ">
-        <a href="https://www.linkedin.com/" target="_blank">
+        <a href="https://www.linkedin.com/in/stephen-rogers-443b00255/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a href="https://twitter.com/" target="_blank">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="https://github.com/" target="_blank">
+        <a href="https://github.com/srcodes12" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>

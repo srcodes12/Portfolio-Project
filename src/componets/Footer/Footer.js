@@ -42,7 +42,7 @@ const Footer = () => {
             <h2 className="d-flex justify-content-around">Socials</h2>
             <hr></hr>
             <div className="d-flex justify-content-around">
-              <a href="https://www.facebook.com/" target="blank">
+              <a href="https://www.linkedin.com/in/stephen-rogers-443b00255/" target="blank">
                 <FontAwesomeIcon icon={faLinkedin} size="4x" />
               </a>
               <a href="https://twitter.com/" target="blank">
