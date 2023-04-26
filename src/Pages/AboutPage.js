@@ -3,7 +3,15 @@ import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
 
 const AboutPage = () => {
   return (
-    <Container style={{ backgroundColor: '#f0f0f0', justifyContent: "center" }}>
+<>
+
+    <Container style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '170px', marginTop: '20px' }} >
+      <Row className="justify-content-start align-items-center">
+        <Col xs={12} md={6}>
+          <h1>My Background</h1>
+        </Col>
+      </Row>
+      <hr></hr>
         <Row className='row-content'>
           <Col sm='6'>
             <h1>bibendum </h1>
@@ -57,6 +65,7 @@ const AboutPage = () => {
           </Col>
         </Row>
     </Container>
+    </>
   )
 };
 
