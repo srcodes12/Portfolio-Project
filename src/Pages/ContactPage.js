@@ -82,7 +82,7 @@ function ContactPage() {
             }}
           >
             <CardBody>
-              <CardTitle tag="h1" className="justify-content-center d-flex">
+              <CardTitle tag="h1" className="justify-content-center d-flex" >
               All-in-One 
               </CardTitle>
               <hr></hr>
