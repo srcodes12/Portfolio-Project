@@ -14,20 +14,20 @@ const Footer = () => {
     <footer className="bg-light site-footer mt-5">
       <Container className="">
         <hr></hr>
-        <Row>
-          <Col xs={{ size: 4, offset: 3 }} sm="2">
-            <h2 className="d-flex justify-content-around">Links</h2>
+        <Row className="justify-content-center">
+          <Col xs={{ size: 4, offset: 3 }} sm="2" className="justify-content-sm-around">
+            <h2>Links</h2>
             <hr></hr>
-            <h4 className="d-flex justify-content-around">
+            <h4>
               <ul className="list-unstyled">
                 <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/directory">Portfolio</Link>
+                  <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                  <Link to="/about">Services</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
@@ -38,23 +38,23 @@ const Footer = () => {
               </ul>
             </h4>
           </Col>
-          <Col xs="6" sm="3" className="text-center">
-            <h2 className="d-flex justify-content-around">Socials</h2>
+          <Col xs="6" sm="3" className="text-center justify-content-sm-around">
+            <h2>Socials</h2>
             <hr></hr>
-            <div className="d-flex justify-content-around">
+            <div>
               <a href="https://www.linkedin.com/in/stephen-rogers-443b00255/" target="blank">
-                <FontAwesomeIcon icon={faLinkedin} size="4x" />
+                <FontAwesomeIcon icon={faLinkedin} size="4x" style={{marginRight: '2vh' }} />
               </a>
               <a href="https://twitter.com/" target="blank">
                 <FontAwesomeIcon icon={faTwitter} size="4x" />
               </a>
               <a href="https://github.com/srcodes12" target="blank">
-                <FontAwesomeIcon icon={faGithub} size="4x" className='faGithublogo'/>
+                <FontAwesomeIcon icon={faGithub} size="4x" className='faGithublogo' style={{marginLeft: '2vh' }}/>
               </a>
             </div>
           </Col>
           <Col sm="4" className="text-center">
-            <h2 className="d-flex justify-content-around">Contact</h2>
+            <h2>Contact</h2>
             <hr></hr>
             <ul className="list-unstyled">
               <li>
@@ -74,8 +74,5 @@ const Footer = () => {
     </footer>
   )
 }
-
-
-
 
 export default Footer

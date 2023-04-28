@@ -71,7 +71,7 @@ function ContactPage() {
               </Card>
             </Container>
 
-        <Container className="d-flex  mt-5" style={{ justifyContent: 'end', marginRight: '5vw' }}>
+        <Container className="d-flex  mt-5" style={{ justifyContent: 'end', marginRight: '17vw' }}>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{

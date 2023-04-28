@@ -45,7 +45,7 @@ const HomePage = () => {
     
       <div style={{ display: 'flex' }}>
         <Col>
-          <img src={hs} width="40%"  className="d-flex  mt-5 "style={{ marginLeft: '20vw' }} alt="Stephen Rogers" />
+          <img src={hs}  className="d-flex  mt-5 "style={{ marginLeft: '20vw', width: '20vw' }} alt="Stephen Rogers" />
         </Col>
         <Col>
           <div style={styles.collapsingContent}>
@@ -92,7 +92,7 @@ const HomePage = () => {
           </div>
         </Col>
       </div>
-      <Container className='rounded-4' style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '10vw', marginLeft: '22vw', marginTop: '10vh', maxWidth: '70%',}} >
+      <Container className='rounded-4' style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '10vw', marginLeft: '19vw', marginTop: '10vh', maxWidth: '70%',}} >
       <Row className="justify-content-start align-items-center">
         <Col xs={12} md={6}>
           <h1>My Background</h1>
