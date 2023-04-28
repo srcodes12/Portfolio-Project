@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div className="sidenav">
       
-
+    <a href='/'>
       <img src={sr} width="90%" className="mt-5" alt="Stephen Rogers" />
       <img
         src={fs}
@@ -40,6 +40,7 @@ const Header = () => {
         id="headShot"
         alt="HeadShot"
       />
+      </a>
       <div>
         <NavLink className="nav-link" to="/">
           Home

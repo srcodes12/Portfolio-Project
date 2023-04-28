@@ -46,87 +46,87 @@ function ContactPage() {
 
   return (
     <div>
-    <Container className="d-flex mt-5" style={{ justifyContent: 'start', paddingLeft: '90px' }}>
-          <Card
-            className="d-flex boxstyle"
-            style={{
-              width: '30%',
-              alignItems: 'center',
-              fontFamily: 'Arial',
-              padding: '20px',
-            }}
-          >
-            <CardBody>
-              <CardTitle tag="h1" className="justify-content-center d-flex">
-              Want a estimate on a project?
-              </CardTitle>
-              <hr></hr>
-                <CardText
-                  className="h3"
-                  style={{ width: '90%', alignItems: 'center' }}
-                >{`Need some help on a project? Or maybe need someone to start-and-finish a website or project? Send me a message and lets build!`}
-                </CardText>
-            </CardBody>
-            
-          </Card>
-        </Container>
+        <Container className="d-flex" style={{ justifyContent: 'start', marginLeft: '24vw', marginTop: '15vh' }}>
+              <Card
+                className="d-flex boxstyle rounded-4"
+                style={{
+                  width: '30%',
+                  alignItems: 'center',
+                  fontFamily: 'Arial',
+                  padding: '20px',
+                }}
+              >
+                <CardBody>
+                  <CardTitle tag="h1" className="justify-content-center d-flex">
+                  Want a estimate on a project?
+                  </CardTitle>
+                  <hr></hr>
+                    <CardText
+                      className="h3"
+                      style={{ width: '90%', alignItems: 'center' }}
+                    >{`Need some help on a project? Or maybe need someone to start-and-finish a website or project? Send me a message and lets build!`}
+                    </CardText>
+                </CardBody>
+                
+              </Card>
+            </Container>
 
-    <Container className="d-flex  mt-5" style={{ justifyContent: 'end', marginRight: '30px' }}>
-          <Card
-            className="d-flex boxstyle"
-            style={{
-              width: '30%',
-              alignItems: 'center',
-              fontFamily: 'Arial',
-              padding: '20px',
-            }}
-          >
-            <CardBody>
-              <CardTitle tag="h1" className="justify-content-center d-flex" >
-              All-in-One 
-              </CardTitle>
-              <hr></hr>
-                <CardText
-                  className="h3"
-                  style={{ width: '90%', alignItems: 'center' }}
-                >{`Need a nice package for all-in-one design and developed website? Contact me below!`}
-                </CardText>
-            </CardBody>
-            
-          </Card>
-        </Container>
-        <Container className="d-flex mt-5" style={{ justifyContent: 'start', paddingLeft: '90px' }}>
-          <Card
-            className="d-flex boxstyle"
-            style={{
-              width: '30%',
-              alignItems: 'center',
-              fontFamily: 'Arial',
-              padding: '20px',
-            }}
-          >
-            <CardBody>
-              <CardTitle tag="h1" className="justify-content-center d-flex">
-                Come say hi!
-              </CardTitle>
-              <hr></hr>
-                <CardText
-                  className="h3"
-                  style={{ width: '90%', alignItems: 'center' }}
-                >{`Wanna just say hi? Leave your info and we can talk code, production, new tech, and more!`}
-                </CardText>
-            </CardBody>
-            
-          </Card>
-        </Container>
+        <Container className="d-flex  mt-5" style={{ justifyContent: 'end', marginRight: '5vw' }}>
+              <Card
+                className="d-flex boxstyle rounded-4"
+                style={{
+                  width: '30%',
+                  alignItems: 'center',
+                  fontFamily: 'Arial',
+                  padding: '20px',
+                }}
+              >
+                <CardBody>
+                  <CardTitle tag="h1" className="justify-content-center d-flex" >
+                  All-in-One 
+                  </CardTitle>
+                  <hr></hr>
+                    <CardText
+                      className="h3"
+                      style={{ width: '90%', alignItems: 'center' }}
+                    >{`Need a nice package for all-in-one design and developed website? Contact me below!`}
+                    </CardText>
+                </CardBody>
+                
+              </Card>
+            </Container>
+            <Container className="d-flex mt-5 " style={{ justifyContent: 'start', marginLeft: '24vw' }}>
+              <Card
+                className="d-flex boxstyle rounded-4"
+                style={{
+                  width: '30%',
+                  alignItems: 'center',
+                  fontFamily: 'Arial',
+                  padding: '20px',
+                }}
+              >
+                <CardBody>
+                  <CardTitle tag="h1" className="justify-content-center d-flex">
+                    Come say hi!
+                  </CardTitle>
+                  <hr></hr>
+                    <CardText
+                      className="h3"
+                      style={{ width: '90%', alignItems: 'center' }}
+                    >{`Wanna just say hi? Leave your info and we can talk code, production, new tech, and more!`}
+                    </CardText>
+                </CardBody>
+                
+              </Card>
+            </Container>
+        
       
       
 
-              
 
 
       <img src={pudgy} style={{ position: 'absolute', top: 0, left: 0, zIndex: -1, marginTop: '100px', opacity: '60%' }} alt="pudgypenguin" width='45%'/>
-      <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '25vh', marginLeft: '25vw',fontSize: 20, padding: 9 }}>Contact Me</Button>
+      <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '15vh', marginBottom: '35vh', marginLeft: '25vw',fontSize: 20, padding: 9 }}>Send message</Button>
       <Modal className='rounded-5' isOpen={modal} toggle={toggle} centered style={{ maxWidth: '80vw', width: '60%' }}>
         <ModalHeader toggle={toggle}><h1>Let's get in touch!</h1></ModalHeader>
         <ModalBody>
@@ -158,8 +158,8 @@ function ContactPage() {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" style={{fontSize: 18, padding: 6 }} onClick={handleSubmit}>Submit</Button>{' '}
-          <Button color="secondary" style={{fontSize: 18, padding: 6 }} onClick={toggle}>Cancel</Button>
+          <Button color="primary" className='rounded-4' style={{fontSize: 18, padding: 6 }} onClick={handleSubmit}>Submit</Button>{' '}
+          <Button color="secondary" className='rounded-4' style={{fontSize: 18, padding: 6 }} onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>
