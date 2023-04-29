@@ -46,7 +46,9 @@ function ContactPage() {
 
   return (
     <div>
-        <Container className="d-flex" style={{ justifyContent: 'start', marginLeft: '24vw', marginTop: '15vh' }}>
+      <Container fluid className='mt-5 rounded-4' style={{ backgroundColor: '#f5f5f5', maxWidth: '70%' }}>
+
+        <Container className="d-flex" style={{ justifyContent: 'start', padding: '2vh' }}>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{
@@ -70,8 +72,8 @@ function ContactPage() {
                 
               </Card>
             </Container>
-
-        <Container className="d-flex  mt-5" style={{ justifyContent: 'end', marginRight: '17vw' }}>
+            <hr></hr>
+        <Container className="d-flex  mt-5" style={{ justifyContent: 'end', padding: '2vh' }}>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{
@@ -95,7 +97,8 @@ function ContactPage() {
                 
               </Card>
             </Container>
-            <Container className="d-flex mt-5 " style={{ justifyContent: 'start', marginLeft: '24vw' }}>
+            <hr></hr>
+            <Container className="d-flex mt-5 " style={{ justifyContent: 'start', padding: '2vh' }}>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{
@@ -119,24 +122,25 @@ function ContactPage() {
                 
               </Card>
             </Container>
-        
+            <hr></hr>
+            <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '5vh', marginBottom: '5vh', marginLeft: '1vw',fontSize: 20, padding: 9 }}>Send message</Button>
+          </Container>
       
       
 
 
 
       <img src={pudgy} style={{ position: 'absolute', top: 0, left: 0, zIndex: -1, marginTop: '100px', opacity: '60%' }} alt="pudgypenguin" width='45%'/>
-      <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '15vh', marginBottom: '35vh', marginLeft: '25vw',fontSize: 20, padding: 9 }}>Send message</Button>
-      <Modal className='rounded-5' isOpen={modal} toggle={toggle} centered style={{ maxWidth: '80vw', width: '60%' }}>
+      <Modal className="rounded-2" isOpen={modal} toggle={toggle} centered style={{ maxWidth: '80vw', width: '60%' }}>
         <ModalHeader toggle={toggle}><h1>Let's get in touch!</h1></ModalHeader>
         <ModalBody>
-          <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}>
             <FormGroup>
-              <Label for="firstName"><h3>First Name</h3> <span className="text-danger">*</span></Label>
+              <Label for="firstName"><h3>First Name <span className="text-danger">*</span></h3></Label>
               <Input type="text" name="firstName" id="firstName" required value={formData.firstName} onChange={handleChange}style={{ fontSize: '18px' }} />
             </FormGroup>
             <FormGroup>
-              <Label for="lastName"><h3>Last Name</h3> <span className="text-danger">*</span></Label>
+              <Label for="lastName"><h3>Last Name <span className="text-danger">*</span></h3></Label>
               <Input type="text" name="lastName" id="lastName" required value={formData.lastName} onChange={handleChange} style={{ fontSize: '18px' }}/>
             </FormGroup>
             <FormGroup>
@@ -144,11 +148,11 @@ function ContactPage() {
               <Input type="text" name="companyName" id="companyName" value={formData.companyName} onChange={handleChange}style={{ fontSize: '18px' }} />
             </FormGroup>
             <FormGroup>
-              <Label for="email"><h3>Email</h3> <span className="text-danger">*</span></Label>
+              <Label for="email"><h3>Email <span className="text-danger">*</span></h3></Label>
               <Input type="email" name="email" id="email" value={formData.email} onChange={handleChange} style={{ fontSize: '18px' }}/>
             </FormGroup>
             <FormGroup>
-              <Label for="phone"><h3>Phone Number</h3> <span className="text-danger">*</span></Label>
+              <Label for="phone"><h3>Phone Number <span className="text-danger">*</span></h3></Label>
               <Input type="tel" name="phone" id="phone" value={formData.phone} onChange={handleChange}  style={{ fontSize: '18px' }} />
             </FormGroup>
             <FormGroup>

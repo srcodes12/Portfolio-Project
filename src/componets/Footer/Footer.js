@@ -15,7 +15,7 @@ const Footer = () => {
       <Container className="">
         <hr></hr>
         <Row className="justify-content-center">
-          <Col xs={{ size: 4, offset: 3 }} sm="2" className="justify-content-sm-around">
+          <Col xs={{ size: 4, offset: 2 }} sm="2" className="justify-content-sm-around">
             <h2>Links</h2>
             <hr></hr>
             <h4>
