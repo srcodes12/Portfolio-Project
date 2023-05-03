@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
 <>
 
-    <Container className="rounded-4"  style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '10vw', marginLeft: '19vh', marginTop: '10vh', maxWidth: '90%',}} >
+    <Container className="rounded-4"  style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '5vw', marginLeft: '30vh', marginTop: '10vh', maxWidth: '80%',}} >
       <Row className="justify-content-start align-items-center">
         <Col xs={12} md={6}>
           <h1>My Background</h1>

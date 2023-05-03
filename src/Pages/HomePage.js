@@ -15,10 +15,6 @@ import {
   CardHeader,
 } from 'reactstrap'
 import SubHeader from '../componets/Header/SubHeader'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import img from '../assets/images/xuxwater.png'
-import xux from '../assets/images/test3.png'
-import im2 from '../assets/images/stat.png'
 import './HomePageStyples.css'
 import '../componets/boxstyle.css'
 import fs from '../assets/images/fs.png'

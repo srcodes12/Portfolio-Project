@@ -19,6 +19,9 @@ import ws1 from '../assets/images/website1.png'
 import '../componets/boxstyle.css' 
 import { useState } from 'react';
 import pudgy from '../assets/images/pudgy.png'
+import puzzle from '../assets/images/puzzle.png'
+import thinking from '../assets/images/thinking.png'
+import hi from '../assets/images/hi.png'
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -47,7 +50,6 @@ function ContactPage() {
   return (
     <div>
       <Container fluid className='mt-5 rounded-4' style={{ backgroundColor: '#f5f5f5', maxWidth: '70%' }}>
-
         <Container className="d-flex" style={{ justifyContent: 'start', padding: '2vh' }}>
               <Card
                 className="d-flex boxstyle rounded-4"
@@ -69,11 +71,20 @@ function ContactPage() {
                     >{`Need some help on a project? Or maybe need someone to start-and-finish a website or project? Send me a message and lets build!`}
                     </CardText>
                 </CardBody>
-                
               </Card>
+              <img
+                src={thinking}
+                alt="estimate"
+                className="d-flex"
+                style={{ marginLeft: '20vw', width: '10vw' }}/>
             </Container>
             <hr></hr>
         <Container className="d-flex  mt-5" style={{ justifyContent: 'end', padding: '2vh' }}>
+              <img
+                src={puzzle}
+                alt="estimate"
+                className="d-flex"
+                style={{ marginRight: '20vw', width: '10vw' }}/>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{
@@ -96,6 +107,7 @@ function ContactPage() {
                 </CardBody>
                 
               </Card>
+              
             </Container>
             <hr></hr>
             <Container className="d-flex mt-5 " style={{ justifyContent: 'start', padding: '2vh' }}>
@@ -121,6 +133,11 @@ function ContactPage() {
                 </CardBody>
                 
               </Card>
+              <img
+                src={hi}
+                alt="estimate"
+                className="d-flex"
+                style={{ marginLeft: '20vw', width: '10vw' }}/>
             </Container>
             <hr></hr>
             <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '5vh', marginBottom: '5vh', marginLeft: '1vw',fontSize: 20, padding: 9 }}>Send message</Button>
