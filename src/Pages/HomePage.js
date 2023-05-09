@@ -14,7 +14,6 @@ import {
   Row,
   CardHeader,
 } from 'reactstrap'
-import SubHeader from '../componets/Header/SubHeader'
 import './HomePageStyples.css'
 import '../componets/boxstyle.css'
 import fs from '../assets/images/fs.png'
@@ -126,7 +125,7 @@ const HomePage = () => {
           </Col>
           <Col sm="6">
             <Card>
-              <CardHeader className="bg-primary text-white">
+              <CardHeader className="text-white bg-secondary">
                 <h1>Lorem ipsum dolor sit amet</h1>
               </CardHeader>
               <CardBody>

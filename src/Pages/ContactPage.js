@@ -76,7 +76,7 @@ function ContactPage() {
                 src={thinking}
                 alt="estimate"
                 className="d-flex"
-                style={{ marginLeft: '20vw', width: '10vw' }}/>
+                style={{ marginLeft: '20vw', width: '10vw', height: '20vh' }}/>
             </Container>
             <hr></hr>
         <Container className="d-flex  mt-5" style={{ justifyContent: 'end', padding: '2vh' }}>
@@ -84,7 +84,7 @@ function ContactPage() {
                 src={puzzle}
                 alt="estimate"
                 className="d-flex"
-                style={{ marginRight: '20vw', width: '10vw' }}/>
+                style={{ marginRight: '20vw', width: '10vw', height: '20vh' }}/>
               <Card
                 className="d-flex boxstyle rounded-4"
                 style={{
@@ -137,7 +137,7 @@ function ContactPage() {
                 src={hi}
                 alt="estimate"
                 className="d-flex"
-                style={{ marginLeft: '20vw', width: '10vw' }}/>
+                style={{ marginLeft: '20vw', width: '10vw', height: '20vh' }}/>
             </Container>
             <hr></hr>
             <Button color="secondary" className='rounded-4' onClick={toggle} style={{marginTop: '5vh', marginBottom: '5vh', marginLeft: '1vw',fontSize: 20, padding: 9 }}>Send message</Button>
