@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -27,11 +27,52 @@ import {
 
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [showToggle, setShowToggle] = useState(false);
+  
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1200) {
+        setShowToggle(true);
+        
+      } else {
+        setShowToggle(false);
+        setIsOpen(false)
+      }
+    };
+  
+
+    window.addEventListener('resize', handleResize);
+
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
-    <div className="sidenav">
-      
+  <>
+      {showToggle && (
+            <button className="navbar-toggle" onClick={toggleNavbar}>
+            Toggle Navigation
+          </button>
+          )}
+
+    <div className={`sidenav ${isOpen ? 'collapsed' : ''}`}>
+    {showToggle && (
+            <button className="navbar-toggle" onClick={toggleNavbar}>
+            Toggle Navigation
+          </button>
+          )}
+
     <a href='/'>
+
       <img src={sr} width="90%" className="mt-5" alt="Stephen Rogers" />
       <img
         src={fs}
@@ -71,6 +112,7 @@ const Header = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 

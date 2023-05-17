@@ -101,3 +101,13 @@
     padding: '.5vw';
   }
 }
+
+
+.navbar-toggle {
+  position: absolute;
+}
+
+.sidenav.collapsed {
+  
+  display: none;
+}
