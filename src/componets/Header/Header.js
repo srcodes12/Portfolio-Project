@@ -59,7 +59,7 @@ const Header = () => {
   return (
   <>
       {showToggle && (
-            <button className="navbar-toggle" onClick={toggleNavbar}>
+            <button className="navbar-toggle sticky" onClick={toggleNavbar}>
             Toggle Navigation
           </button>
           )}

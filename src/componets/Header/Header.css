@@ -49,8 +49,7 @@
   padding-top: 50px;
   padding-right: 0%;
   display: grid;
-
-  
+  z-index: 9999;
 }
 
 
@@ -110,4 +109,9 @@
 .sidenav.collapsed {
   
   display: none;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
