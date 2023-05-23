@@ -59,21 +59,24 @@ const Header = () => {
   return (
   <>
       {showToggle && (
-            <button className="navbar-toggle sticky" onClick={toggleNavbar}>
-            Toggle Navigation
-          </button>
+        <button className="navbar-toggle sticky" style={{width: '60px', height: '35px', marginLeft: '0px', marginTop: '25px'}} onClick={toggleNavbar}>
+            <span class="arrow arrow-right"></span>
+            <span class="arrow arrow-right arrow-gap"></span>
+        </button>
           )}
 
-    <div className={`sidenav ${isOpen ? 'collapsed' : ''}`}>
-    {showToggle && (
+  <div className={`sidenav ${isOpen ? 'collapsed' : ''}`}>
+    
+      {showToggle && (
             <button className="navbar-toggle" onClick={toggleNavbar}>
-            Toggle Navigation
-          </button>
-          )}
+                <span class="arrow arrow-left"></span>
+                <span class="arrow arrow-left arrow-gap"></span>
+            </button>
+            )}
 
     <a href='/'>
 
-      <img src={sr} width="90%" className="mt-5" alt="Stephen Rogers" />
+      <img src={sr} width="90%" alt="Stephen Rogers" />
       <img
         src={fs}
         width="70%"

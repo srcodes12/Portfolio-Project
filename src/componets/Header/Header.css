@@ -103,15 +103,44 @@
 
 
 .navbar-toggle {
-  position: absolute;
+  margin: 10px 20px 0px 50px;
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5f5f5f;
+}
+.navbar-toggle:hover {
+  background: radial-gradient(circle, #545454, #575757);
 }
 
 .sidenav.collapsed {
-  
   display: none;
 }
 
 .sticky {
   position: sticky;
   top: 0;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.arrow-left {
+  border-right: 15px solid rgb(0, 0, 0);
+}
+
+.arrow-right {
+  border-left: 15px solid rgb(0, 0, 0);
+}
+
+.arrow-gap {
+  margin-left: 10px;
 }

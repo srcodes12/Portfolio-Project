@@ -32,7 +32,7 @@ const PortfolioPage = () => {
 
   return (
     <>
-    <CardGroup className="mt-5 rounded-5">
+    <CardGroup className="mt-4 rounded-5">
       <Card className="m-2 rounded-5 boxstyle" onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <CardImg alt="Graphics Portfolio" src={ws1} top width="100%" className='rounded-5 '/>
         {isHovered && (
