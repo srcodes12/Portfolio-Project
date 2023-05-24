@@ -1,16 +1,11 @@
 import {
   Container,
   Card,
-  CardImg,
   CardBody,
-  CardSubtitle,
   Button,
   CardTitle,
-  CardGroup,
   CardText,
   Col,
-  ListGroupItem,
-  ListGroup,
   Row,
   CardHeader,
 } from 'reactstrap'
