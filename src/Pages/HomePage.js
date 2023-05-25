@@ -11,7 +11,6 @@ import {
 } from 'reactstrap'
 import './HomePageStyples.css'
 import '../componets/boxstyle.css'
-import fs from '../assets/images/fs.png'
 import { useState } from 'react'
 import hs from '../assets/images/headshotimg.png'
 

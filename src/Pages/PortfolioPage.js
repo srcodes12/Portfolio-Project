@@ -1,19 +1,14 @@
 import {
-  Container,
-  Row,
-  Col,
   Card,
   CardImg,
   CardBody,
   CardSubtitle,
   Button,
-  CardImgOverlay,
   CardTitle,
   CardGroup,
   CardText,
 } from 'reactstrap'
 import React, { useState } from 'react';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import ws1 from '../assets/images/website1.png'
 import '../componets/boxstyle.css' 
 import './PortfolioPagecss.css'

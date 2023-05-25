@@ -1,4 +1,3 @@
-import SubHeader from '../componets/Header/SubHeader';
 import {
   Container,
   Card,
@@ -15,7 +14,6 @@ import {
   ModalFooter,
   ModalBody,
 } from 'reactstrap'
-import ws1 from '../assets/images/website1.png'
 import '../componets/boxstyle.css' 
 import { useState } from 'react';
 import pudgy from '../assets/images/pudgy.png'

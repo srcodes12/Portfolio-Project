@@ -1,16 +1,4 @@
 import { useState, useEffect } from 'react'
-import {
-  Navbar,
-  NavbarBrand,
-  isCollapsed,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  Container,
-  Col,
-  Row,
-  Button,
-} from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import { GrHomeRounded } from 'react-icons/gr'
 import './Header.css'
@@ -18,9 +6,7 @@ import fs from '../../assets/images/fs.png'
 import sr from '../../assets/images/sr.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faFacebook,
   faTwitter,
-  faInstagram,
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
@@ -104,13 +90,13 @@ const Header = () => {
       </div>
 
       <div className="d-flex justify-content-start ">
-        <a href="https://www.linkedin.com/in/stephen-rogers-443b00255/" target="_blank">
+        <a href="https://www.linkedin.com/in/stephen-rogers-443b00255/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://twitter.com/" target="_blank">
+        <a href="https://twitter.com/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="https://github.com/srcodes12" target="_blank">
+        <a href="https://github.com/srcodes12" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>

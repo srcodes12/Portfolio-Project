@@ -1,17 +1,13 @@
 import { Container,
-  Row,
-  Col,
   Card,
   CardImg,
   CardBody,
   CardSubtitle,
   Button,
-  CardImgOverlay,
   CardTitle,
   CardGroup,
-  CardText,} from 'reactstrap';
-import SubHeader from '../componets/Header/SubHeader';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+  CardText,
+} from 'reactstrap';
 
 
 const ServicesPage = () => {
