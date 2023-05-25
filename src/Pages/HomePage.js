@@ -25,7 +25,7 @@ const HomePage = () => {
     collapsingContent: {
       transition: 'height 1s ease-in-out',
       overflow: 'hidden',
-      height: isCollapsed ? ('650px': '700px') : '700px',
+      height: isCollapsed ? '650px' : '1200px', 
     },
   }
 
@@ -35,7 +35,7 @@ const HomePage = () => {
         <Col>
           <img
             src={hs}
-            className="d-flex  mt-5 "
+            className="d-flex  mt-5"
             style={{ marginLeft: '20vw', width: '20vw' }}
             alt="Stephen Rogers"
           />
@@ -44,7 +44,7 @@ const HomePage = () => {
           <div style={styles.collapsingContent}>
             <Container
               fluid
-              className="d-flex  mt-5 "
+              className="d-flex  mt-5"
               style={{ justifyContent: 'center' }}
             >
               <Card

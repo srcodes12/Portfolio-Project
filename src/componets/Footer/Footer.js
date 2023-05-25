@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-light site-footer mt-5">
       <Container className="">
         <hr></hr>
-        <Row className="justify-content-center">
+        <Row className="text-center justify-content-center">
           <Col xs={{ size: 4, offset: 2 }} sm="2" className="justify-content-sm-around">
             <h2>Links</h2>
             <hr></hr>

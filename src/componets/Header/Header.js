@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Tooltip } from "reactstrap"
 import { NavLink } from 'react-router-dom'
 import { GrHomeRounded } from 'react-icons/gr'
 import './Header.css'
@@ -12,44 +13,66 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 
+
+
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showToggle, setShowToggle] = useState(false);
+
+
   
+const toggleNavbar = () => {
+   setIsOpen(!isOpen);
+};
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 1200) {
-        setShowToggle(true);
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth <= 1200) {
+      setShowToggle(true);
         
-      } else {
-        setShowToggle(false);
-        setIsOpen(false)
-      }
-    };
+    } else {
+      setShowToggle(false);
+      setIsOpen(false)
+    }
+  };
   
 
-    window.addEventListener('resize', handleResize);
+  window.addEventListener('resize', handleResize);
 
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
 
 
   return (
   <>
-      {showToggle && (
-        <button className="navbar-toggle sticky" style={{width: '60px', height: '35px', marginLeft: '0px', marginTop: '25px'}} onClick={toggleNavbar}>
-            <span class="arrow arrow-right"></span>
-            <span class="arrow arrow-right arrow-gap"></span>
-        </button>
-          )}
+    {showToggle && (
+      <div>
+      <button 
+        className="navbar-toggle sticky"
+        style={{
+          width: '60px', 
+          height: '35px', 
+          marginLeft: '0px',
+          marginTop: '25px'
+        }} 
+        onClick={toggleNavbar}
+      >
+        <span className="arrow arrow-right"></span>
+        <span className="arrow arrow-right arrow-gap"></span>
+      </button>
+      <Tooltip>
+        Hello world!
+      </Tooltip>
+    </div>
+    )
+  };
+
+
 
   <div className={`sidenav ${isOpen ? 'collapsed' : ''}`}>
     
