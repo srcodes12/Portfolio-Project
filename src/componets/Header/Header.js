@@ -26,26 +26,24 @@ const toggleNavbar = () => {
    setIsOpen(!isOpen);
 };
 
+const handleResize = () => {
+  if (window.innerWidth <= 1200) {
+    setShowToggle(true);
+  } else {
+    setShowToggle(false);
+    setIsOpen(false);
+  }
+};
+
 useEffect(() => {
-  const handleResize = () => {
-    if (window.innerWidth <= 1200) {
-      setShowToggle(true);
-        
-    } else {
-      setShowToggle(false);
-      setIsOpen(false)
-    }
-  };
-  
+  handleResize(); // Call the function when the component mounts initially
 
-  window.addEventListener('resize', handleResize);
-
-  
+  window.addEventListener('resize', handleResize); // Add event listener for resize
 
   return () => {
-    window.removeEventListener('resize', handleResize);
+    window.removeEventListener('resize', handleResize); // Clean up the event listener when the component unmounts
   };
-}, []);
+}, []); 
 
 
   return (
@@ -65,9 +63,7 @@ useEffect(() => {
         <span className="arrow arrow-right"></span>
         <span className="arrow arrow-right arrow-gap"></span>
       </button>
-      <Tooltip>
-        Hello world!
-      </Tooltip>
+  
     </div>
     )
   };
