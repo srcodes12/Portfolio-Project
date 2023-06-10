@@ -12,12 +12,8 @@ const ServicesPage = () => {
     height: 'auto',
     background:
       'linear-gradient(to right, yellow 4px, transparent 4px) 0 0,' +
-      'linear-gradient(to right, yellow 4px, transparent 4px) 0 100%,' +
-      'linear-gradient(to left, yellow 4px, transparent 4px) 100% 0,' +
       'linear-gradient(to left, yellow 4px, transparent 4px) 100% 100%,' +
       'linear-gradient(to bottom, yellow 4px, transparent 4px) 0 0,' +
-      'linear-gradient(to bottom, yellow 4px, transparent 4px) 100% 0,' +
-      'linear-gradient(to top, yellow 4px, transparent 4px) 0 100%,' +
       'linear-gradient(to top, yellow 4px, transparent 4px) 100% 100%',
     backgroundRepeat: 'no-repeat',
     backgroundSize: '20px 20px',
@@ -26,8 +22,8 @@ const ServicesPage = () => {
   };
 
   return (
-    <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-      <Container className='mt-5 d-flex justify-content-center align-items-center flex-column' style={containerStyle}>
+    <div style={{display: 'flex', justifyContent: 'center', width: '100%', marginLeft: '5vw' }}>
+      <Container className='mt-5 justify-content-center align-items-center flex-column' style={containerStyle}>
       <Card className='mb-3'>
         <CardBody>
           <CardTitle tag="h1">Front-end Development</CardTitle>
@@ -36,7 +32,7 @@ const ServicesPage = () => {
           </CardText>
         </CardBody>
       </Card>
-      <Card className='mb-3' style={{ width: '80%'}}>
+      <Card className='mb-3' style={{ width: '100%'}}>
         <CardBody>
           <CardTitle tag="h1">Custom UI Design</CardTitle>
           <CardText style={{ fontSize: '15px',}}>
