@@ -1,3 +1,18 @@
-.card-img-hover:hover {
-  filter: brightness(25%);
+.card-img-overlay {
+  position: relative;
+}
+
+.card-img-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+
+.card-img-overlay:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
 }

@@ -26,7 +26,7 @@ const ServicesPage = () => {
       'linear-gradient(to bottom, yellow 4px, transparent 4px) 0 0,' +
       'linear-gradient(to top, yellow 4px, transparent 4px) 100% 100%',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '20px 20px',
+    backgroundSize: '50px 50px',
     padding: '20px', 
     display: 'inline-block',
   };

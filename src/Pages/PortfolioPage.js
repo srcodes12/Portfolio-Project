@@ -29,7 +29,10 @@ const PortfolioPage = () => {
     <>
     <CardGroup className="mt-4 rounded-5">
       <Card className="m-2 rounded-5 boxstyle" onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-        <CardImg alt="Graphics Portfolio" src={ws1} top width="100%" className='rounded-5 '/>
+      <div className="card-img-container">
+          <CardImg alt="Graphics Portfolio" src={ws1} top width="100%" className="rounded-5" />
+      </div>
+
         {isHovered && (
         <Button
           target="blank"
@@ -44,8 +47,8 @@ const PortfolioPage = () => {
           <CardTitle tag="h2">IPFS Graphics Portfolio</CardTitle>
           <hr />
           <CardText tag="h4">
-            This is my graphic portfolio, using adobe photoshop, illistrator, after effects, and cinema 4d. This website
-            is also designed and build by me, in the use case of a link tree!
+            This is a landing page for my graphic design work, The art shows my skills in Adobe Photoshop, After Effects, Encoder, Cinema 4D and more.
+             It also show cases my skills in HTML/CSS and JS
           </CardText>
           <Button target="blank" style={{ fontSize: 18, padding: 6 }} className="rounded-4" href="https://xux.eth.limo/">
             Launch
