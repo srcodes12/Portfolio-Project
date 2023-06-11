@@ -11,7 +11,9 @@ import {
 } from 'reactstrap';
 import './ServicesStyles.css';
 import si2 from '../assets/images/servicesimg2.png'
-
+import bslogo from '../assets/images/bslogo.png'
+import htmllogo from '../assets/images/htmllogo.png'
+import reactlogo from '../assets/images/reactlogo.png'
 
 const ServicesPage = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -49,7 +51,9 @@ const ServicesPage = () => {
                 </CardText>
               </Col>
               <Col md="6">
-                <img src='none' style={{width: '70%', borderRadius: '10px'}} alt="Front-End Development"/>
+                <img src={reactlogo} style={{width: '20%', borderRadius: '10px'}} alt="Front-End Development"/>
+                <img src={bslogo} style={{width: '20%', borderRadius: '10px'}} alt="Front-End Development"/>
+                <img src={htmllogo} style={{width: '20%', borderRadius: '10px'}} alt="Front-End Development"/>
               </Col>
             </Row>
           </CardBody>
