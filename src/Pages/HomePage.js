@@ -44,13 +44,12 @@ const HomePage = () => {
           <div style={styles.collapsingContent}>
             <Container
               fluid
-              className="d-flex  mt-5"
+              className="d-flex  mt-5 "
               style={{ justifyContent: 'center' }}
             >
               <Card
-                className="d-flex boxstyle rounded-4"
+                className="d-flex boxstyle rounded-4 col-lg-8"
                 style={{
-                  width: '60%',
                   alignItems: 'center',
                   fontFamily: 'Arial',
                   padding: '20px',
