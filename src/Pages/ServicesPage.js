@@ -38,8 +38,8 @@ const ServicesPage = () => {
   };
 
   return (
-  <div style={{display: 'flex', justifyContent: 'center', width: '100%', marginLeft: '5vw' }}>
-    <Container className='mt-5 justify-content-center align-items-center flex-column' style={containerStyle}>
+  <div style={{display: 'flex', justifyContent: 'center', width: '100%',}}>
+    <Container className='mt-5 justify-content-center align-items-center flex-column col-lg-8' style={containerStyle}>
   <Card className='mb-3'>
     <CardTitle tag="h1" onClick={toggle1} className="collapsible-title">Front-end Development</CardTitle>
     <Collapse isOpen={isOpen1}>

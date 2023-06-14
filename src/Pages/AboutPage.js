@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
 <>
 
-    <Container className="rounded-4"  style={{ backgroundColor: '#f0f0f0', justifyContent: "end", marginRight: '5vw', marginLeft: '30vh', marginTop: '10vh', maxWidth: '80%',}} >
+    <Container className="rounded-4"  style={{ backgroundColor: '#f0f0f0', justifyContent: "end", maxWidth: '60%'}} >
       <Row className="justify-content-start align-items-center">
         <Col xs={12} md={6}>
         <h1>My Background</h1>
@@ -32,13 +32,13 @@ const AboutPage = () => {
               <CardBody>
                 <dl className="row">
                 <dt className="col-6">React.js</dt>
-          <dd className="col-6">Expert</dd>
-          <dt className="col-6">JavaScript</dt>
-          <dd className="col-6">Advanced</dd>
-          <dt className="col-6">HTML/CSS</dt>
-          <dd className="col-6">Advanced</dd>
-          <dt className="col-6">UI/UX Design</dt>
-          <dd className="col-6">Intermediate</dd>
+                <dd className="col-6">Expert</dd>
+                <dt className="col-6">JavaScript</dt>
+                <dd className="col-6">Advanced</dd>
+                <dt className="col-6">HTML/CSS</dt>
+                <dd className="col-6">Advanced</dd>
+                <dt className="col-6">UI/UX Design</dt>
+                <dd className="col-6">Intermediate</dd>
                 </dl>
               </CardBody>
             </Card>
