@@ -70,7 +70,7 @@ useEffect(() => {
 
 
 
-  <div className={`sidenav ${isOpen ? 'collapsed' : ''}`}>
+  <div className={`sidenav col-md-3 col-lg-1 ${isOpen ? 'collapsed' : ''}`}>
     
       {showToggle && (
             <button className="navbar-toggle" onClick={toggleNavbar}>
