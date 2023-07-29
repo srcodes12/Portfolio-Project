@@ -14,11 +14,12 @@ import si2 from '../assets/images/servicesimg2.png'
 import bslogo from '../assets/images/bslogo.png'
 import htmllogo from '../assets/images/htmllogo.png'
 import reactlogo from '../assets/images/reactlogo.png'
+import responsivedesignimg from '../assets/images/responsivedesign.png'
 
 const ServicesPage = () => {
-  const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
-  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen3, setIsOpen3] = useState(true);
 
   const toggle1 = () => setIsOpen1(!isOpen1);
   const toggle2 = () => setIsOpen2(!isOpen2);
@@ -91,7 +92,7 @@ const ServicesPage = () => {
             </CardText>
           </Col>
           <Col md="6" className="d-flex justify-content-center align-items-center">
-            <img src="your-image-url3" alt="Responsive Design" />
+            <img src={responsivedesignimg} style={{width: '60%'}} alt="Responsive Design" />
           </Col>
         </Row>
       </CardBody>

@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 import ws1 from '../assets/images/website1.png'
 import '../componets/boxstyle.css' 
 import './PortfolioPagecss.css'
-
+import pac from '../assets/images/pawsandclaws.png'
 const PortfolioPage = () => {
 
   const [isHovered, setIsHovered] = useState(false);
@@ -56,50 +56,30 @@ const PortfolioPage = () => {
         </CardBody>
       </Card>
       <Card className="m-2 rounded-5 boxstyle">
-        <CardImg className="rounded-5" alt="Card image cap" src="https://picsum.photos/318/180" top width="100%" />
+        <CardImg className="rounded-5" alt="Card image cap" src={pac} top width="100%" />
         <CardBody>
-          <CardTitle tag="h2">Card title</CardTitle>
+          <CardTitle tag="h2">Paws and Claws Shelter</CardTitle>
+          <hr />
           <CardSubtitle className="mb-2 text-muted" tag="h3">
-            Card subtitle
+            Animal Rescue Shelter
           </CardSubtitle>
           <CardText tag="h4">
-            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-            little bit longer.
+          Paws and Claws Rescue is a web app built with React, 
+          Redux, HTML, and CSS. It connects animal lovers with rescue
+          organizations to find forever homes for abandoned and vulnerable
+          animals. The platform showcases animals available for adoption, 
+          promotes adoption events, and accepts donations to support the
+          mission of animal shelters and rescues.
           </CardText>
-          <Button href="xux.eth.limo">Launch</Button>
+          <Button target="blank" style={{ fontSize: 18, padding: 6 }} className="rounded-4" href="https://64c55db0b41ae1159eadea4c--magical-rabanadas-e5d3e8.netlify.app/about">
+            Launch
+          </Button>
         </CardBody>
       </Card>
       
     </CardGroup>
     <CardGroup className="mt-5 rounded-5">
-    <Card className="m-2 rounded-5 boxstyle">
-      <CardImg className="rounded-5" alt="Card image cap" src="https://picsum.photos/318/180" top width="100%" />
-      <CardBody>
-        <CardTitle tag="h2">Card title</CardTitle>
-        <CardSubtitle className="mb-2 text-muted" tag="h3">
-          Card subtitle
-        </CardSubtitle>
-        <CardText tag="h4">
-          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-          little bit longer.
-        </CardText>
-        <Button href="xux.eth.limo">Launch</Button>
-      </CardBody>
-    </Card>
-    <Card className="m-2 rounded-5 boxstyle">
-      <CardImg className="rounded-5" alt="Card image cap" src="https://picsum.photos/318/180" top width="100%" />
-      <CardBody>
-        <CardTitle tag="h2">Card title</CardTitle>
-        <CardSubtitle className="mb-2 text-muted" tag="h3">
-          Card subtitle
-        </CardSubtitle>
-        <CardText tag="h4">
-          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-          little bit longer.
-        </CardText>
-        <Button href="xux.eth.limo">Launch</Button>
-      </CardBody>
-    </Card>
+    
   </CardGroup>
   </>
   );
