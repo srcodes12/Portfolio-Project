@@ -1,70 +1,60 @@
-import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
-
+import React, { useState } from 'react';
+import {
+  Container,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  Collapse,
+  Col,
+  Row,
+} from 'reactstrap';
+import './AboutPage.css';
+import hs from '../assets/images/headshotimg.png';
 
 const AboutPage = () => {
-  return (
-<>
+    const [isOpen, setIsOpen] = useState(true);
 
-    <Container className="rounded-4"  style={{ backgroundColor: '#f0f0f0', justifyContent: "end", maxWidth: '60%'}} >
-      <Row className="justify-content-start align-items-center">
-        <Col xs={12} md={6}>
-        <h1>My Background</h1>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="row-content">
-          <Col sm="6">
-            <h1>About Me </h1>
-            <h3>
-            As a committed front-end software developer, I've sharpened my skills in React.js,
-             a widely-used JavaScript library, enabling me to build dynamic and interactive user 
-             interfaces. I'm passionate about designing scalable websites that are not only visually
-              appealing but also serve practical purposes, tackling the problems everyday people encounter.
-               With my expertise and creativity, I turn complex issues into intuitive, user-friendly 
-            digital solutions, making technology more accessible and beneficial for everyone.
-            </h3>
-          </Col>
-          <Col sm="6">
-            <Card>
-              <CardHeader className="text-white bg-secondary">
-                <h1>Skills and Expertise</h1>
-              </CardHeader>
+    const toggle = () => setIsOpen(!isOpen);
+
+    return (
+      <div style={{display: 'flex', justifyContent: 'center', width: '100%',}}>
+        <Container className='about-container'>
+          <Card className='mb-3 about-card'>
+            <CardTitle tag="h1" onClick={toggle} className="collapsible-title">About Me</CardTitle>
+            <Collapse isOpen={isOpen}>
+              <hr></hr>
               <CardBody>
-                <dl className="row">
-                <dt className="col-6">React.js</dt>
-                <dd className="col-6">Expert</dd>
-                <dt className="col-6">JavaScript</dt>
-                <dd className="col-6">Advanced</dd>
-                <dt className="col-6">HTML/CSS</dt>
-                <dd className="col-6">Advanced</dd>
-                <dt className="col-6">UI/UX Design</dt>
-                <dd className="col-6">Intermediate</dd>
-                </dl>
+                <Row>
+                  <Col md="6">
+                    <CardText>
+                      As a passionate web developer, I've always been fascinated by the ever-evolving world of technology. Over the years, I've honed my skills and embraced the power and flexibility of React to bring ideas to life on the web.
+                    </CardText>
+                    <CardText>
+                      React's component-based architecture, combined with its vibrant ecosystem, enables me to build scalable and maintainable applications. Whether it's a single-page application or a complex web platform, I always strive for performance, user experience, and code quality.
+                    </CardText>
+                  </Col>
+                  <Col md="6">
+                    <img src={hs} alt="Your Portrait" className="about-image"/>
+                  </Col>
+                </Row>
+                <Row className="mt-4">
+                  <Col md="12">
+                    <h2>My Journey</h2>
+                    <CardText>
+                      My journey into web development began when I stumbled upon a basic HTML and CSS tutorial online. The ability to create and control a visual web interface was intriguing. Over the years, I transitioned from creating basic static web pages to developing dynamic web applications using JavaScript and, eventually, React.
+                    </CardText>
+                    <CardText>
+                      Along the way, I've collaborated with amazing teams, faced challenging problems, and learned to adopt best practices. Every project is a new learning experience, and I'm always eager to delve into new technologies and methodologies.
+                    </CardText>
+                  </Col>
+                </Row>
               </CardBody>
-            </Card>
-          </Col>
-          <Col>
-    <Card>
-      <CardBody>
-        <blockquote className="blockquote">
-          <p>
-            "In the world of software development, the ability to create effective and scalable solutions is a form of art. It's about understanding the needs of users and translating those needs into a digital reality."
-          </p>
-          <footer className="blockquote-footer">
-            My Philosophy,{' '}
-            <cite title="Source Title">
-              "I strive to make technology more accessible and beneficial for everyone through my work."
-            </cite>
-          </footer>
-        </blockquote>
-      </CardBody>
-    </Card>
-  </Col>
-</Row>
-
-</Container>
-</>
-  )
+            </Collapse>
+          </Card>
+        </Container>
+      </div>
+    );
 };
 
 export default AboutPage;

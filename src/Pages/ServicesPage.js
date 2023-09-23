@@ -48,7 +48,7 @@ const ServicesPage = () => {
       <CardBody>
         <Row>
           <Col md="6">
-            <CardText style={{ fontSize: '15px' }}>
+            <CardText style={{ fontSize: '20px' }}>
               Specializing in modern front-end technologies, I can help bring your vision to life with a responsive and interactive website.
             </CardText>
           </Col>
@@ -68,7 +68,7 @@ const ServicesPage = () => {
       <CardBody>
         <Row>
           <Col md="6">
-            <CardText style={{ fontSize: '15px' }}>
+            <CardText style={{ fontSize: '20px' }}>
               I provide custom UI design services tailored to your needs. 
               From conceptualizing to final implementation, I aim to create user-friendly designs that not only look good but also enhance user experience.
             </CardText>
@@ -87,7 +87,7 @@ const ServicesPage = () => {
       <CardBody>
         <Row>
           <Col md="6">
-            <CardText style={{ fontSize: '15px' }}>
+            <CardText style={{ fontSize: '20px' }}>
               With a mobile-first approach, I ensure that your website looks great and functions flawlessly across all devices, be it desktop, tablet, or mobile.
             </CardText>
           </Col>

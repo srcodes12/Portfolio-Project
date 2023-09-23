@@ -57,7 +57,7 @@ function ContactPage() {
         Want an estimate on a project?
       </CardTitle>
       <hr />
-      <CardText className="h3" style={{ width: '90%', alignItems: 'center' }}>
+      <CardText className="h3" style={{ width: '90%', alignItems: 'center', fontSize: '20px' }}>
         Need some help on a project? Or maybe need someone to start-and-finish a website or project? Send me a message and let's build!
       </CardText>
     </CardBody>
@@ -75,7 +75,7 @@ function ContactPage() {
           All-in-One
         </CardTitle>
         <hr />
-        <CardText className="h3" style={{ width: '90%', alignItems: 'center' }}>
+        <CardText className="h3" style={{ width: '90%', alignItems: 'center', fontSize: '20px' }}>
           Need a nice package for an all-in-one design and developed website? Contact me below!
         </CardText>
       </CardBody>
@@ -90,7 +90,7 @@ function ContactPage() {
         Come say hi!
       </CardTitle>
       <hr />
-      <CardText className="h3" style={{ width: '90%', alignItems: 'center' }}>
+      <CardText className="h3" style={{ width: '90%', alignItems: 'center', fontSize: '20px' }}>
         Wanna just say hi? Leave your info, and we can talk code, production, new tech, and more!
       </CardText>
     </CardBody>

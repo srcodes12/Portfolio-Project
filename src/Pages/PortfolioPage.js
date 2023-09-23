@@ -46,9 +46,9 @@ const PortfolioPage = () => {
         <CardBody>
           <CardTitle tag="h2">IPFS Graphics Portfolio</CardTitle>
           <hr />
-          <CardText tag="h4">
+          <CardText tag="h4" style={{fontSize: '23px'}}>
             This is a landing page for my graphic design work, The art shows my skills in Adobe Photoshop, After Effects, Encoder, Cinema 4D and more.
-             It also show cases my skills in HTML/CSS and JS
+            It also show cases my skills in HTML/CSS and JS
           </CardText>
           <Button target="blank" style={{ fontSize: 18, padding: 6 }} className="rounded-4" href="https://xux.eth.limo/">
             Launch
@@ -63,7 +63,7 @@ const PortfolioPage = () => {
           <CardSubtitle className="mb-2 text-muted" tag="h3">
             Animal Rescue Shelter
           </CardSubtitle>
-          <CardText tag="h4">
+          <CardText tag="h4" style={{fontSize: '23px'}}>
           Paws and Claws Rescue is a web app built with React, 
           Redux, HTML, and CSS. It connects animal lovers with rescue
           organizations to find forever homes for abandoned and vulnerable

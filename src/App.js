@@ -13,19 +13,21 @@ import ServicesPage from './Pages/ServicesPage';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Routes>
-      <Route path='/' element={<HomePage />} />
-      <Route path= 'portfolio' element={<PortfolioPage />}/>
-      <Route path= 'contact' element={<ContactPage />}/>
-      <Route path= 'services' element={<ServicesPage />}/>
-      <Route path= 'about' element={<AboutPage />}/>
-    </Routes>
-    <Footer/>
-    </>
+    <div className="app-container">
+      <Header />
+      <div className="main-content">
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='portfolio' element={<PortfolioPage />} />
+          <Route path='contact' element={<ContactPage />} />
+          <Route path='services' element={<ServicesPage />} />
+          <Route path='about' element={<AboutPage />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   );
-};
+}
 
 export default App;
 

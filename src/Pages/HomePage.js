@@ -63,12 +63,12 @@ const HomePage = () => {
                   {isCollapsed ? (
                     <CardText
                       className="h3"
-                      style={{ width: '90%', alignItems: 'center' }}
+                      style={{ width: '90%', alignItems: 'center', fontSize: '23px'}}
                     >{`Hello and welcome to my website! My name is Stephen and I'm a 23 year old software developer who is passionate about building with current technology to solve real world problems.`}</CardText>
                   ) : (
                     <CardText
                       className="h3"
-                      style={{ width: '90%', alignItems: 'center' }}
+                      style={{ width: '90%', alignItems: 'center', fontSize: '25px' }}
                     >{`Hello and welcome to my website! My name is Stephen and I'm a 23 year old software developer who is passionate about building with current technology to solve real world problems. I have a deep understanding of software development principles, best practices, and modern technologies, and I strive to create meaningful and impactful software solutions that not only meet the needs of clients and end users. Thank you for stopping by and please don't hesitate to reach out to me with any questions or inquiries.`}</CardText>
                   )}
 
@@ -108,7 +108,7 @@ const HomePage = () => {
         <Row className="row-content">
           <Col sm="6">
             <h1>About Me </h1>
-            <h3>
+            <h3 style={{fontSize: '23px'}}>
             As a committed front-end software developer, I've sharpened my skills in React.js,
              a widely-used JavaScript library, enabling me to build dynamic and interactive user 
              interfaces. I'm passionate about designing scalable websites that are not only visually
@@ -122,7 +122,7 @@ const HomePage = () => {
               <CardHeader className="text-white bg-secondary">
                 <h1>Skills and Expertise</h1>
               </CardHeader>
-              <CardBody>
+              <CardBody style={{fontSize: '19px'}}>
                 <dl className="row">
                 <dt className="col-6">React.js</dt>
           <dd className="col-6">Expert</dd>
@@ -138,14 +138,14 @@ const HomePage = () => {
           </Col>
           <Col>
     <Card>
-      <CardBody>
+      <CardBody >
         <blockquote className="blockquote">
-          <p>
+          <p style={{fontSize: '23px'}}>
             "In the world of software development, the ability to create effective and scalable solutions is a form of art. It's about understanding the needs of users and translating those needs into a digital reality."
           </p>
           <footer className="blockquote-footer">
             My Philosophy,{' '}
-            <cite title="Source Title">
+            <cite title="Source Title" style={{fontSize: '23px'}}>
               "I strive to make technology more accessible and beneficial for everyone through my work."
             </cite>
           </footer>
