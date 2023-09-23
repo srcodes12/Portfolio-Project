@@ -24,6 +24,13 @@ h1, h2 {
   background-color: #171717;
   color: #d6d6d6;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+
+
+.about-container {
+  border-radius: 15px;
 }
 
 .collapsible-title:hover {
@@ -34,5 +41,4 @@ h1, h2 {
 .about-image {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

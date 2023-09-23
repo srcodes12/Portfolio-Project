@@ -32,27 +32,18 @@ const PortfolioPage = () => {
       <div className="card-img-container">
           <CardImg alt="Graphics Portfolio" src={ws1} top width="100%" className="rounded-5" />
       </div>
-
-        {isHovered && (
-        <Button
-          target="blank"
-          style={{ fontSize: 18, padding: 6, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
-          className="rounded-4 card-img-hover"
-          href={'https://xux.eth.limo/'}
-        >
-          Launch
-        </Button>
-      )}
         <CardBody>
           <CardTitle tag="h2">IPFS Graphics Portfolio</CardTitle>
           <hr />
-          <CardText tag="h4" style={{fontSize: '23px'}}>
-            This is a landing page for my graphic design work, The art shows my skills in Adobe Photoshop, After Effects, Encoder, Cinema 4D and more.
+          <CardText tag="h4" style={{fontSize: '23px',}}>
+            This website for my graphic design work, The art shows my skills in Adobe Photoshop, After Effects, Encoder, Cinema 4D and more.
             It also show cases my skills in HTML/CSS and JS
           </CardText>
+          <div className="button-container">
           <Button target="blank" style={{ fontSize: 18, padding: 6 }} className="rounded-4" href="https://xux.eth.limo/">
             Launch
           </Button>
+          </div>
         </CardBody>
       </Card>
       <Card className="m-2 rounded-5 boxstyle">
@@ -71,6 +62,7 @@ const PortfolioPage = () => {
           promotes adoption events, and accepts donations to support the
           mission of animal shelters and rescues.
           </CardText>
+          
           <Button target="blank" style={{ fontSize: 18, padding: 6 }} className="rounded-4" href="https://64c55db0b41ae1159eadea4c--magical-rabanadas-e5d3e8.netlify.app/about">
             Launch
           </Button>
